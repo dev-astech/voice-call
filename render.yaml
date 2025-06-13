@@ -1,9 +1,7 @@
 services:
   - type: web
     name: voice-call-backend
-    env: java
-    region: singapore
-    plan: free
+    env: docker
     buildCommand: "./mvnw clean install"
     startCommand: "./mvnw spring-boot:run"
     envVars:
