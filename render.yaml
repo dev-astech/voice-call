@@ -1,7 +1,7 @@
 services:
   - type: web
     name: voice-call-backend
-    env: static
+    env: java
     buildCommand: "./mvnw clean install"
     startCommand: "java -jar target/*.jar"
     envVars:
