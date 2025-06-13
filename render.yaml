@@ -1,9 +1,9 @@
 services:
   - type: web
     name: voice-call-backend
-    env: docker
+    env: static
     buildCommand: "./mvnw clean install"
-    startCommand: "./mvnw spring-boot:run"
+    startCommand: "java -jar target/*.jar"
     envVars:
       - key: DB_URL
         sync: false
